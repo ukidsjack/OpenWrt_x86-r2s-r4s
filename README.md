@@ -1,3 +1,4 @@
+192.168.2.1
 # OpenWrt with NGINX for x86_64 NanoPi-R2S R4S Raspberry-Pi-4B
 [1]: https://img.shields.io/badge/license-GPLV2-brightgreen.svg
 [2]: /LICENSE
