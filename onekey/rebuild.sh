@@ -65,10 +65,10 @@ if [ -f "devices/$firmware/diy.sh" ]; then
 fi
 cp -Rf ./diy/* ./
 if [ -f "devices/common/default-settings" ]; then
-	sed -i 's/10.0.0.1/$ip/' package/*/*/my-default-settings/files/uci.defaults
+	sed -i 's/192.168.2.1/$ip/' package/*/*/my-default-settings/files/uci.defaults
 fi
 if [ -f "devices/$firmware/default-settings" ]; then
-	sed -i 's/10.0.0.1/$ip/' devices/$firmware/default-settings
+	sed -i 's/192.168.2.1/$ip/' devices/$firmware/default-settings
 	cat devices/$firmware/default-settings >> package/*/*/my-default-settings/files/uci.defaults
 fi
 if [ -n "$(ls -A "devices/common/patches" 2>/dev/null)" ]; then
